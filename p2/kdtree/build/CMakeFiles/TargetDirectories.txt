@@ -1,0 +1,15 @@
+/home/dario/universidad/eedd/p2/kdtree/build/CMakeFiles/kdtree.dir
+/home/dario/universidad/eedd/p2/kdtree/build/CMakeFiles/test_kdtree.dir
+/home/dario/universidad/eedd/p2/kdtree/build/CMakeFiles/test.dir
+/home/dario/universidad/eedd/p2/kdtree/build/CMakeFiles/edit_cache.dir
+/home/dario/universidad/eedd/p2/kdtree/build/CMakeFiles/rebuild_cache.dir
+/home/dario/universidad/eedd/p2/kdtree/build/pattern/CMakeFiles/pattern.dir
+/home/dario/universidad/eedd/p2/kdtree/build/pattern/CMakeFiles/test_pattern.dir
+/home/dario/universidad/eedd/p2/kdtree/build/pattern/CMakeFiles/test.dir
+/home/dario/universidad/eedd/p2/kdtree/build/pattern/CMakeFiles/edit_cache.dir
+/home/dario/universidad/eedd/p2/kdtree/build/pattern/CMakeFiles/rebuild_cache.dir
+/home/dario/universidad/eedd/p2/kdtree/build/binary_tree/CMakeFiles/test_btree_node.dir
+/home/dario/universidad/eedd/p2/kdtree/build/binary_tree/CMakeFiles/test_btree.dir
+/home/dario/universidad/eedd/p2/kdtree/build/binary_tree/CMakeFiles/test.dir
+/home/dario/universidad/eedd/p2/kdtree/build/binary_tree/CMakeFiles/edit_cache.dir
+/home/dario/universidad/eedd/p2/kdtree/build/binary_tree/CMakeFiles/rebuild_cache.dir

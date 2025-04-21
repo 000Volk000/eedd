@@ -1,0 +1,129 @@
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/dario/universidad/eedd/p3/avl-tree/build
+[1/4] Building CXX object CMakeFiles/test_bstree.dir/test_avltree.cpp.o
+En el fichero incluido desde /home/dario/universidad/eedd/p3/avl-tree/avltree.hpp:382,
+                 desde /home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:17:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp: En la instanciación de ‘const T& AVLTree<T>::current() const [with T = int]’:
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:137:43:   se requiere desde aquí
+  137 |                           << tree->current() << std::endl;
+      |                              ~~~~~~~~~~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:164:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+  164 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:163:7: nota: se declara aquí
+  163 |     T fixme{};
+      |       ^~~~~
+En el fichero incluido desde /home/dario/universidad/eedd/p3/avl-tree/avltree_iterator.hpp:132,
+                 desde /home/dario/universidad/eedd/p3/avl-tree/avltree.hpp:15:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp: En la instanciación de ‘typename AVLTNode<T>::Ref& AVLTreeIterator<T>::node() [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:38:5:   se requiere desde ‘AVLTreeIterator<T>::AVLTreeIterator() [with T = int]’
+   38 |     assert(node() == nullptr);
+      |            ~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:39:30:   se requiere desde aquí
+   39 |         AVLTreeIterator<int> iter;
+      |                              ^~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:28:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+   28 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:27:31: nota: se declara aquí
+   27 |     typename AVLTNode<T>::Ref fixme;
+      |                               ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp: En la instanciación de ‘const typename AVLTNode<T>::Ref& AVLTreeIterator<T>::node() const [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:73:5:   se requiere desde ‘const T& AVLTreeIterator<T>::operator*() const [with T = int]’
+   73 |     assert(node());
+      |            ~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:215:31:   se requiere desde aquí
+  215 |                 std::cout << *iter << std::endl;
+      |                               ^~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:19:34: aviso: se devuelve la referencia al temporal [-Wreturn-local-addr]
+   19 |     return typename AVLTNode<T>::Ref();
+      |                                  ^~~~~
+[2/4] Building CXX object CMakeFiles/test_avltree.dir/test_avltree.cpp.o
+En el fichero incluido desde /home/dario/universidad/eedd/p3/avl-tree/avltree.hpp:382,
+                 desde /home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:17:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp: En la instanciación de ‘const T& AVLTree<T>::current() const [with T = int]’:
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:137:43:   se requiere desde aquí
+  137 |                           << tree->current() << std::endl;
+      |                              ~~~~~~~~~~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:164:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+  164 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:163:7: nota: se declara aquí
+  163 |     T fixme{};
+      |       ^~~~~
+En el fichero incluido desde /home/dario/universidad/eedd/p3/avl-tree/avltree_iterator.hpp:132,
+                 desde /home/dario/universidad/eedd/p3/avl-tree/avltree.hpp:15:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp: En la instanciación de ‘typename AVLTNode<T>::Ref& AVLTreeIterator<T>::node() [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:38:5:   se requiere desde ‘AVLTreeIterator<T>::AVLTreeIterator() [with T = int]’
+   38 |     assert(node() == nullptr);
+      |            ~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:39:30:   se requiere desde aquí
+   39 |         AVLTreeIterator<int> iter;
+      |                              ^~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:28:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+   28 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:27:31: nota: se declara aquí
+   27 |     typename AVLTNode<T>::Ref fixme;
+      |                               ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp: En la instanciación de ‘const typename AVLTNode<T>::Ref& AVLTreeIterator<T>::node() const [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:73:5:   se requiere desde ‘const T& AVLTreeIterator<T>::operator*() const [with T = int]’
+   73 |     assert(node());
+      |            ~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:215:31:   se requiere desde aquí
+  215 |                 std::cout << *iter << std::endl;
+      |                               ^~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_iterator_imp.hpp:19:34: aviso: se devuelve la referencia al temporal [-Wreturn-local-addr]
+   19 |     return typename AVLTNode<T>::Ref();
+      |                                  ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp: En la instanciación de ‘const typename AVLTNode<T>::Ref& AVLTree<T>::root_node() const [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:667:26:   se requiere desde ‘bool AVLTree<T>::check_parent_chains() const [with T = int]’
+  667 |         go_down(root_node(), branch);
+      |                 ~~~~~~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:360:9:   se requiere desde ‘void AVLTree<T>::insert(const T&) [with T = int]’
+  360 |         assert(check_parent_chains());
+      |                ^~~~~~~~~~~~~~~~~~~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:155:33:   se requiere desde aquí
+  155 |                     tree->insert(key);
+      |                     ~~~~~~~~~~~~^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:506:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+  506 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:505:31: nota: se declara aquí
+  505 |     typename AVLTNode<T>::Ref fixme;
+      |                               ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp: En la instanciación de ‘typename AVLTNode<T>::Ref& AVLTree<T>::parent_node() [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:600:25:   se requiere desde ‘void AVLTree<T>::make_balanced() [with T = int]’
+  600 |     auto P = parent_node(); // the subtree root node.
+      |              ~~~~~~~~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:361:9:   se requiere desde ‘void AVLTree<T>::insert(const T&) [with T = int]’
+  361 |         make_balanced();
+      |         ^~~~~~~~~~~~~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:155:33:   se requiere desde aquí
+  155 |                     tree->insert(key);
+      |                     ~~~~~~~~~~~~^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:542:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+  542 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:541:31: nota: se declara aquí
+  541 |     typename AVLTNode<T>::Ref fixme;
+      |                               ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp: En la instanciación de ‘typename AVLTNode<T>::Ref& AVLTree<T>::current_node() [with T = int; typename AVLTNode<T>::Ref = std::shared_ptr<AVLTNode<int> >]’:
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:625:37:   se requiere desde ‘void AVLTree<T>::make_balanced() [with T = int]’
+  625 |         set_parent_node(current_node()->parent());
+      |                         ~~~~~~~~~~~~^~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:361:9:   se requiere desde ‘void AVLTree<T>::insert(const T&) [with T = int]’
+  361 |         make_balanced();
+      |         ^~~~~~~~~~~~~
+/home/dario/universidad/eedd/p3/avl-tree/test_avltree.cpp:155:33:   se requiere desde aquí
+  155 |                     tree->insert(key);
+      |                     ~~~~~~~~~~~~^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:488:12: aviso: reference to local variable ‘fixme’ returned [-Wreturn-local-addr]
+  488 |     return fixme;
+      |            ^~~~~
+/home/dario/universidad/eedd/p3/avl-tree/avltree_imp.hpp:487:31: nota: se declara aquí
+  487 |     typename AVLTNode<T>::Ref fixme;
+      |                               ^~~~~
+[3/4] Linking CXX executable test_bstree
+[4/4] Linking CXX executable test_avltree

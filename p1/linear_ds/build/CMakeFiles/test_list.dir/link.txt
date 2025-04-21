@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -Wl,--dependency-file=CMakeFiles/test_list.dir/link.d CMakeFiles/test_list.dir/test_list.cpp.o -o test_list

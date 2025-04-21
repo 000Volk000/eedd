@@ -1,0 +1,232 @@
+Start testing: Mar 11 13:43 CET
+----------------------------------------------------------
+1/11 Testing: TestCDArray
+1/11 Test: TestCDArray
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "01_tests_cdarray"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestCDArray" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 01_tests_cdarray/00 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/01 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/02 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/03 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/04 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/05 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/06 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/07 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/08 ... [32mTest passed.[0m
+Test running: 01_tests_cdarray/09 ... [32mTest passed.[0m
+10/10 tests passed.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"TestCDArray" end time: Mar 11 13:43 CET
+"TestCDArray" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/11 Testing: TestCDArrayFoldUnfold
+2/11 Test: TestCDArrayFoldUnfold
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "02_tests_cdarray_fold_unfold"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestCDArrayFoldUnfold" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 02_tests_cdarray_fold_unfold/00 ... [32mTest passed.[0m
+Test running: 02_tests_cdarray_fold_unfold/01 ... [32mTest passed.[0m
+Test running: 02_tests_cdarray_fold_unfold/02 ... [32mTest passed.[0m
+Test running: 02_tests_cdarray_fold_unfold/03 ... [32mTest passed.[0m
+4/4 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestCDArrayFoldUnfold" end time: Mar 11 13:43 CET
+"TestCDArrayFoldUnfold" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/11 Testing: TestQueue
+3/11 Test: TestQueue
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_queue" "03_tests_queue"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestQueue" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 03_tests_queue/00 ... [32mTest passed.[0m
+Test running: 03_tests_queue/01 ... [32mTest passed.[0m
+Test running: 03_tests_queue/02 ... [32mTest passed.[0m
+Test running: 03_tests_queue/03 ... [32mTest passed.[0m
+Test running: 03_tests_queue/04 ... [32mTest passed.[0m
+Test running: 03_tests_queue/05 ... [32mTest passed.[0m
+6/6 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestQueue" end time: Mar 11 13:43 CET
+"TestQueue" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/11 Testing: TestDNode
+4/11 Test: TestDNode
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_dnode" "04_tests_simple_list_node"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestDNode" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 04_tests_simple_list_node/00 ... [32mTest passed.[0m
+Test running: 04_tests_simple_list_node/01 ... [32mTest passed.[0m
+2/2 tests passed.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"TestDNode" end time: Mar 11 13:43 CET
+"TestDNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/11 Testing: TestSimpleList
+5/11 Test: TestSimpleList
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "05_tests_simple_list"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestSimpleList" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 05_tests_simple_list/00 ... [32mTest passed.[0m
+Test running: 05_tests_simple_list/01 ... [32mTest passed.[0m
+2/2 tests passed.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"TestSimpleList" end time: Mar 11 13:43 CET
+"TestSimpleList" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/11 Testing: TestListNode
+6/11 Test: TestListNode
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "06_tests_list_node"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestListNode" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 06_tests_list_node/00 ... [32mTest passed.[0m
+Test running: 06_tests_list_node/01 ... [32mTest passed.[0m
+2/2 tests passed.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"TestListNode" end time: Mar 11 13:43 CET
+"TestListNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/11 Testing: TestListIterator
+7/11 Test: TestListIterator
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_iterator" "07_tests_list_iterator"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestListIterator" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 07_tests_list_iterator/02 ... [32mTest passed.[0m
+Test running: 07_tests_list_iterator/03 ... [32mTest passed.[0m
+Test running: 07_tests_list_iterator/04 ... [32mTest passed.[0m
+Test running: 07_tests_list_iterator/05 ... [32mTest passed.[0m
+Test running: 07_tests_list_iterator/06 ... [32mTest passed.[0m
+5/5 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestListIterator" end time: Mar 11 13:43 CET
+"TestListIterator" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/11 Testing: TestListEditing
+8/11 Test: TestListEditing
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "08_tests_list_editing"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestListEditing" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 08_tests_list_editing/00 ... [32mTest passed.[0m
+Test running: 08_tests_list_editing/01 ... [32mTest passed.[0m
+Test running: 08_tests_list_editing/02 ... [32mTest passed.[0m
+3/3 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestListEditing" end time: Mar 11 13:43 CET
+"TestListEditing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/11 Testing: TestListFoldUnfold
+9/11 Test: TestListFoldUnfold
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "09_tests_list_fold_unfold"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestListFoldUnfold" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 09_tests_list_fold_unfold/00 ... [32mTest passed.[0m
+Test running: 09_tests_list_fold_unfold/01 ... [32mTest passed.[0m
+Test running: 09_tests_list_fold_unfold/02 ... [32mTest passed.[0m
+Test running: 09_tests_list_fold_unfold/03 ... [32mTest passed.[0m
+Test running: 09_tests_list_fold_unfold/04 ... [32mTest passed.[0m
+5/5 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestListFoldUnfold" end time: Mar 11 13:43 CET
+"TestListFoldUnfold" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/11 Testing: TestListAlgorithm
+10/11 Test: TestListAlgorithm
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "10_list_algorithms"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestListAlgorithm" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 10_list_algorithms/00 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/01 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/02 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/03 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/04 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/05 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/06 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/07 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/08 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/09 ... [32mTest passed.[0m
+Test running: 10_list_algorithms/10 ... [32mTest passed.[0m
+11/11 tests passed.
+<end of output>
+Test time =   0.22 sec
+----------------------------------------------------------
+Test Passed.
+"TestListAlgorithm" end time: Mar 11 13:43 CET
+"TestListAlgorithm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/11 Testing: TestStack
+11/11 Test: TestStack
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_stack" "11_tests_stack"
+Directory: /home/dario/universidad/eedd/linear_ds
+"TestStack" start time: Mar 11 13:43 CET
+Output:
+----------------------------------------------------------
+Test running: 11_tests_stack/00 ... [32mTest passed.[0m
+Test running: 11_tests_stack/01 ... [32mTest passed.[0m
+Test running: 11_tests_stack/02 ... [32mTest passed.[0m
+3/3 tests passed.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"TestStack" end time: Mar 11 13:43 CET
+"TestStack" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 11 13:43 CET

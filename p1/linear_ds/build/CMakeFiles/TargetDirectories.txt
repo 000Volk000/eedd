@@ -1,0 +1,9 @@
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_list.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_dnode.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_iterator.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_stack.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_cdarray.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test_queue.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/test.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/edit_cache.dir
+/home/dario/universidad/eedd/linear_ds/build/CMakeFiles/rebuild_cache.dir

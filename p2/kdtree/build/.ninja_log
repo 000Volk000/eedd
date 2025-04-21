@@ -1,0 +1,14 @@
+# ninja log v6
+2	801	1742989583777564703	binary_tree/CMakeFiles/test_btree_node.dir/test_btree_node.cpp.o	2958967a2253d3a6
+1	910	1742989583777564703	CMakeFiles/kdtree.dir/kdtree.cpp.o	f8b92f382311d39e
+801	971	1742989584577287466	binary_tree/test_btree_node	8c13d5de6619ec35
+2	975	1742989583777564703	pattern/CMakeFiles/test_pattern.dir/test_pattern.cpp.o	411a8fe5971ca8d2
+2	1000	1742989583777564703	CMakeFiles/test_kdtree.dir/test_kdtree.cpp.o	157773ac2ccc7338
+3	1013	1742989583777564703	binary_tree/CMakeFiles/test_btree.dir/test_btree.cpp.o	46f6e05d250e216d
+2	1075	1742989583777564703	pattern/CMakeFiles/test_pattern.dir/pattern.cpp.o	eb6fda419878a1c9
+1013	1112	1742989584787214773	binary_tree/test_btree	8d171c7900a84611
+1075	1177	1742989584850526184	pattern/test_pattern	f431492fe0cec967
+1	1187	1742989583777564703	pattern/CMakeFiles/pattern.dir/pattern.cpp.o	ae626f5534b1ba2b
+1187	1265	1742989584960488107	pattern/libpattern.a	abc30d4c5e1bdc67
+1265	1301	1742989585040460466	libkdtree.a	ea983386ffe68537
+1301	1400	1742989585077114490	test_kdtree	283e45bfdb13dc3f

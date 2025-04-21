@@ -1,0 +1,32 @@
+Start testing: Mar 26 12:46 CET
+----------------------------------------------------------
+11/11 Testing: TestBTreeInOrder
+11/11 Test: TestBTreeInOrder
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/p2/kdtree/build/binary_tree//test_btree" "05_tests_inorder"
+Directory: /home/dario/universidad/eedd/p2/kdtree/binary_tree
+"TestBTreeInOrder" start time: Mar 26 12:46 CET
+Output:
+----------------------------------------------------------
+Test running: 05_tests_inorder/30 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/31 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/32 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/33 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/34 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/40 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/41 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/42 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/43 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/44 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/45 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/46 ... [32mTest passed.[0m
+Test running: 05_tests_inorder/47 ... [32mTest passed.[0m
+13/13 tests passed.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"TestBTreeInOrder" end time: Mar 26 12:46 CET
+"TestBTreeInOrder" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 26 12:46 CET

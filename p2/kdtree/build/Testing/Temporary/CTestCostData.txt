@@ -1,0 +1,12 @@
+TestCreateKDTree 0 0
+TestKDTreeNearestL1 0 0
+TestKDTreeNearestL2 0 0
+TestPattern 1 0.0414191
+TestDataset 1 0.0402951
+TestPatternDistances 1 0.0358162
+TestBTNode 1 0.0479335
+TestBTreeFoldUnfold 1 0.0521977
+TestBTreeHeightSize 1 0.0738483
+TestBTreeTraversals 1 0.0538551
+TestBTreeInOrder 1 0.067573
+---

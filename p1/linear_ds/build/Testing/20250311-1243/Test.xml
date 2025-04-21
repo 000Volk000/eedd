@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250311-1243-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.31.6"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="archlinux"
+	OSRelease="6.12.17-1-lts"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Thu, 27 Feb 2025 14:12:30 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="104"
+	ModelName="AMD Ryzen 7 5700U with Radeon Graphics"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="13818"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="400"
+	>
+	<Testing>
+		<StartDateTime>Mar 11 13:43 CET</StartDateTime>
+		<StartTestTime>1741697017</StartTestTime>
+		<TestList>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestCDArray</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestCDArrayFoldUnfold</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestQueue</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestDNode</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestSimpleList</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestListNode</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestListIterator</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestListEditing</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestListFoldUnfold</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestListAlgorithm</Test>
+			<Test>/home/dario/universidad/eedd/linear_ds/TestStack</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>TestCDArray</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestCDArray</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "01_tests_cdarray"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.064364</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "01_tests_cdarray"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwjC8BChTHJ6ckFhUlVuobGCjo6ekpSEcbG+WGgJQWJBYXp6boSUcb5HKFENBrSIFeIwr0GlOg14QCvaYU6DWjQK85BXotKNBriUevoYG+oYECWANMnAsAysfJQA==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestCDArrayFoldUnfold</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestCDArrayFoldUnfold</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "02_tests_cdarray_fold_unfold"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0503635</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_cdarray" "02_tests_cdarray_fold_unfold"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwii8BChTHJ6ckFhUlVsan5eekxJfmgSh9AwMFPT09BeloY6PcEJC2gsTi4tQUPelog1yuEBLMMaSSOUZUMscYjzkm+iYKYK0wUS4ACOdndQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestQueue</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestQueue</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_queue" "03_tests_queue"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0549346</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_queue" "03_tests_queue"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwji8BChTHF5amlqbqGxgo6OnpKUhHGxvlhoAUFiQWF6em6ElHG+RyheDVaUi2TiOydRqTrdOEbJ2meHSa6ZspgBXDRLkAj8N2Vg==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestDNode</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestDNode</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_dnode" "04_tests_simple_list_node"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0403608</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_dnode" "04_tests_simple_list_node"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwiS8BChTHF2fmFuSkxudkFpfE5+WnpOobGCjo6ekpSEcbG+WGgPQUJBYXp6boSUcb5HKFEGuIIR5DjPSNFMD6YKJcAH9MNEw=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestSimpleList</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestSimpleList</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "05_tests_simple_list"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0415519</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "05_tests_simple_list"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwjS8BChTHF2fmFuSkxudkFpfoGxgo6OnpKUhHGxvlhoCUFyQWF6em6ElHG+RyhRCh3xCPfiN9IwWwFpgoFwA5gDBE====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestListNode</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestListNode</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "06_tests_list_node"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0413406</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "06_tests_list_node"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwiy8BChTH52QWl8Tn5aek6hsYKOjp6SlIRxsb5YaAFBckFhenpuhJRxvkcoUQ1G2IR7eRvpECWANMlAsAT4Uufg==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestListIterator</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestListIterator</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_iterator" "07_tests_list_iterator"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0470793</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_iterator" "07_tests_list_iterator"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwjy8BChTH52QWl8RnlqQWJZbkF+kbGCno6ekpSEcbG+WGgDQUJBYXp6boSUcb5HKFEGWCMcUmmFBsginFJpjhMcFU31QBrAkmygUAd2t0jQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestListEditing</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestListEditing</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "08_tests_list_editing"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0486596</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "08_tests_list_editing"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjCwiC8BChTH52QWl8SnpmSWAIX1DQwU9PT0FKSjjY1yQ0DqCxKLi1NT9KSjDXK5QogxwJBSA4zwGGCsb6wA1gMT5QIAGLRGoQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestListFoldUnfold</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestListFoldUnfold</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "09_tests_list_fold_unfold"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0475797</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "09_tests_list_fold_unfold"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjCwjC8BChTH52QWl8Sn5eekxJfmgSh9AwMFPT09BeloY6PcEJCegsTi4tQUPelog1yuEGINMaSGIUbUMMSYGoaY4DHEVN9UAawPJsoFAAl8ejc=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestListAlgorithm</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestListAlgorithm</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "10_list_algorithms"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.216625</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_list" "10_list_algorithms"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyl0jsOQEAUheHeFjR3BWOuN+uYTiESwiRmiDv2j0JLcdo/5+uOmSTQcXpv/dwS6361EvphnbfDhsVJojUppSjustSZZ7wPItOo4k67yPxqhnQK6QzSOaQLSJeQriBdQ7pBNH99jTlhpnBneXt0AUVP5kE=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>TestStack</Name>
+			<Path>/home/dario/universidad/eedd/linear_ds</Path>
+			<FullName>/home/dario/universidad/eedd/linear_ds/TestStack</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_stack" "11_tests_stack"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0472555</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/linear_ds/build//test_stack" "11_tests_stack"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjA0jC8BChTHF5ckJmfrGxgo6OnpKUhHGxvlhoAUFiQWF6em6ElHG+RyheDVaUi2TiM8Oo31jRXAimGiXACsRz3U====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Mar 11 13:43 CET</EndDateTime>
+		<EndTestTime>1741697018</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
