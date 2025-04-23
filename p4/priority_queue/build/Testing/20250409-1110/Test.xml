@@ -2,13 +2,13 @@
 <Site BuildName="(empty)"
 	BuildStamp="20250409-1110-Experimental"
 	Name="(empty)"
-	Generator="ctest-4.0.0"
+	Generator="ctest-4.0.1"
 	CompilerName=""
 	CompilerVersion=""
 	OSName="Linux"
 	Hostname="archlinux"
-	OSRelease="6.12.22-1-lts"
-	OSVersion="#1 SMP PREEMPT_DYNAMIC Tue, 08 Apr 2025 06:20:12 +0000"
+	OSRelease="6.12.24-1-lts"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Sun, 20 Apr 2025 08:45:23 +0000"
 	OSPlatform="x86_64"
 	Is64Bits="1"
 	VendorString="AuthenticAMD"
@@ -22,19 +22,19 @@
 	TotalVirtualMemory="0"
 	TotalPhysicalMemory="13818"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="1826.37"
+	ProcessorClockFrequency="3920.26"
 	>
 	<Testing>
-		<StartDateTime>Apr 09 14:54 CEST</StartDateTime>
-		<StartTestTime>1744203263</StartTestTime>
+		<StartDateTime>Apr 23 13:55 CEST</StartDateTime>
+		<StartTestTime>1745409355</StartTestTime>
 		<TestList>
-			<Test>/home/dario/universidad/eedd/p4/priority_queue/TestPQueue</Test>
+			<Test>/home/dario/universidad/eedd/p4/priority_queue/TestHeapEditing</Test>
 		</TestList>
 		<Test Status="failed">
-			<Name>TestPQueue</Name>
+			<Name>TestHeapEditing</Name>
 			<Path>/home/dario/universidad/eedd/p4/priority_queue</Path>
-			<FullName>/home/dario/universidad/eedd/p4/priority_queue/TestPQueue</FullName>
-			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_pqueue" "04_pqueue"</FullCommandLine>
+			<FullName>/home/dario/universidad/eedd/p4/priority_queue/TestHeapEditing</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_heap" "01_heap_editing"</FullCommandLine>
 			<Results>
 				<NamedMeasurement type="text/string" name="Exit Code">
 					<Value>Failed</Value>
@@ -43,7 +43,7 @@
 					<Value>1</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.73815</Value>
+					<Value>0.911374</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -52,18 +52,18 @@
 					<Value>Completed</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Command Line">
-					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_pqueue" "04_pqueue"</Value>
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_heap" "01_heap_editing"</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="text/string" name="Environment">
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJztlMFOwzAQRO/5hV7mBK0QsdOmHCyCxB+A5FuFQlRvyUqNbWynCL6eJG0PHPoF9Liamd3xO1hTTAi9tWw/FGRZ+8+eehJSIs9zzDarZadHj29iJJPPNrLL9KVQcQ4Vx9COLceWDL44taAQXMDWGcL9w7QoDaZTWEG0riNhmsBO9JYPFCKbxggiY4QvhR+EwOm7Ph77O9bc+bz1Xq2lwsGxwctJfx3lR/2kFNnJOt86O3TTNwtspl4aFdimN4Xn4Y0hsbN4j/xD8wWqCm5v6nHCHYpb7BreDxyyyxCWVwhCrq4QhCz/EYRCrDH2j+efIvsFLnl/PQ==</Value>
+					<Value encoding="base64" compression="gzip">eJzlVDFOAzEQ7POFNFtBUnC2L8kBFiDR8QB3J3RY8YZbibON7Qvi9/iM0hJA6dLuzszOjCwrjAnCaC3ZVwlcdD1q36GhlAeMc6iqCubtqh7UhPQ6RjTVvOXDTP1MFf+n1geq+KbuyFLs0cAHpR4wBBdg6wzClRBF75jg6teCTdFLGVQkJLDeDciMDuTYaGmPIZLRhiEaw/ya+bwIlD679xFHZOUuDb7qvZc1byTsHRl4yuM79SAl2YghLbbOZhvqYgltsaDgHsimZwmPcQKQs/BCsdPFxWJ5CTtNb7m+o1HXp+5ucz7dNafu7vp8urs5n6i3f34mNRMcpsTx8A3OvgAY+tUy====</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Apr 09 14:54 CEST</EndDateTime>
-		<EndTestTime>1744203263</EndTestTime>
+		<EndDateTime>Apr 23 13:55 CEST</EndDateTime>
+		<EndTestTime>1745409356</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

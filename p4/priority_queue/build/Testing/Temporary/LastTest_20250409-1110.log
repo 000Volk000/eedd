@@ -1,32 +1,41 @@
-Start testing: Apr 09 14:54 CEST
+Start testing: Apr 23 13:55 CEST
 ----------------------------------------------------------
-4/4 Testing: TestPQueue
-4/4 Test: TestPQueue
-Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_pqueue" "04_pqueue"
+1/4 Testing: TestHeapEditing
+1/4 Test: TestHeapEditing
+Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_heap" "01_heap_editing"
 Directory: /home/dario/universidad/eedd/p4/priority_queue
-"TestPQueue" start time: Apr 09 14:54 CEST
+"TestHeapEditing" start time: Apr 23 13:55 CEST
 Output:
 ----------------------------------------------------------
-Test running: 04_pqueue/00 ... [32mTest passed.[0m
-Test running: 04_pqueue/01 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
+Test running: 01_heap_editing/00 ... [32mTest passed.[0m
+Test running: 01_heap_editing/01 ... [32mTest passed.[0m
+Test running: 01_heap_editing/02 ... [31mTest finished with error code -11[0m
 
-Test running: 04_pqueue/02 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
+Test running: 01_heap_editing/03 ... [31mTest finished with error code -6[0m
+test_heap: /home/dario/universidad/eedd/p4/priority_queue/heap_imp.hpp:206: void Heap<T>::insert(const T&) [with T = int]: Assertion `is_a_heap()' failed.
 
-Test running: 04_pqueue/03 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
+Test running: 01_heap_editing/04 ... [31mTest finished with error code -11[0m
 
-Test running: 04_pqueue/04 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
+Test running: 01_heap_editing/05 ... [31mTest finished with error code -6[0m
+test_heap: /home/dario/universidad/eedd/p4/priority_queue/heap_imp.hpp:206: void Heap<T>::insert(const T&) [with T = int]: Assertion `is_a_heap()' failed.
 
-1/5 tests passed.
+Test running: 01_heap_editing/06 ... [31mTest finished with error code -11[0m
+
+Test running: 01_heap_editing/07 ... [31mTest finished with error code -6[0m
+test_heap: /home/dario/universidad/eedd/p4/priority_queue/heap_imp.hpp:206: void Heap<T>::insert(const T&) [with T = int]: Assertion `is_a_heap()' failed.
+
+Test running: 01_heap_editing/08 ... [31mTest finished with error code -6[0m
+test_heap: /home/dario/universidad/eedd/p4/priority_queue/heap_imp.hpp:206: void Heap<T>::insert(const T&) [with T = int]: Assertion `is_a_heap()' failed.
+
+Test running: 01_heap_editing/09 ... [31mTest finished with error code -11[0m
+
+2/10 tests passed.
 <end of output>
-Test time =   0.74 sec
+Test time =   0.91 sec
 ----------------------------------------------------------
 Test Failed.
-"TestPQueue" end time: Apr 09 14:54 CEST
-"TestPQueue" time elapsed: 00:00:00
+"TestHeapEditing" end time: Apr 23 13:55 CEST
+"TestHeapEditing" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 09 14:54 CEST
+End testing: Apr 23 13:55 CEST

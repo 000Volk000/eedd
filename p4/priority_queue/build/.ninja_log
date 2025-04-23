@@ -1,13 +1,13 @@
 # ninja log v6
-3	861	1744199430797739812	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
-2	991	1744199430794406490	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
-862	994	1744199431654403688	test_pqueue	faa80adf49da06f3
-991	1111	1744199431784403264	test_heap	7f98c92fc13356b7
-3	857	1744202758000368888	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
-2	904	1744202758000368888	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
-857	1001	1744202758857152283	test_pqueue	faa80adf49da06f3
-904	1027	1744202758903825308	test_heap	7f98c92fc13356b7
-3	761	1744203257840218196	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
-3	888	1744203257840218196	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
-761	909	1744203258596878831	test_pqueue	faa80adf49da06f3
-888	1005	1744203258723544495	test_heap	7f98c92fc13356b7
+586	683	1745409032227603323	test_heap	7f98c92fc13356b7
+517	632	1745409032157603707	test_pqueue	faa80adf49da06f3
+2	586	1745409031644273191	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
+2	517	1745409031644273191	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
+2	466	1745409068870735579	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
+466	563	1745409069334066370	test_pqueue	faa80adf49da06f3
+2	612	1745409068870735579	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
+612	704	1745409069480732232	test_heap	7f98c92fc13356b7
+2	493	1745409348379201791	CMakeFiles/test_pqueue.dir/test_pqueue.cpp.o	a5c0b405ddf64bae
+1	517	1745409348375868476	CMakeFiles/test_heap.dir/test_heap.cpp.o	7789a3f36db2aeb0
+493	597	1745409348869199102	test_pqueue	faa80adf49da06f3
+517	616	1745409348892532308	test_heap	7f98c92fc13356b7

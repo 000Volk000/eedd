@@ -57,7 +57,7 @@ template <class T>
 void Heap<T>::shift_up(size_t i)
 {
     //
-    if (i > 0 && comp_(values_[i], values_[parent(i)]))
+    if (i > 0 && comp_((*values_)[i], (*values_)[parent(i)]))
     {
         std::swap(values_[i], values_[parent(i)]);
         shift_up(parent(i));
@@ -73,12 +73,12 @@ void Heap<T>::shift_down(size_t i)
     size_t lC = left(i);
     size_t rC = right(i);
 
-    if (lC < last_item_ && comp_(values_[lC], values_[n]))
+    if (lC < last_item_ && comp_((*values_)[lC], (*values_)[n]))
     {
         n = lC;
     }
 
-    if (rC < last_item_ && comp_(values_[rC], values_[n]))
+    if (rC < last_item_ && comp_((*values_)[rC], (*values_)[n]))
     {
         n = rC;
     }
@@ -95,11 +95,27 @@ template <class T>
 bool Heap<T>::is_a_heap(size_t root) const
 {
     bool ret_val = true;
-    // TODO
+    //
     // Remember: the tree is a heap if both children are heaps and the root is
     // comp(parent, child) if true for both children.
     // Remember: a leaf is a heap.
-
+    size_t l = left(root);
+    size_t r = right(root);
+    if (!(l > last_item_ && r > last_item_))
+    {
+        if (!is_a_heap(l))
+        {
+            ret_val = false;
+        }
+        else if (r < last_item_ && !is_a_heap(r))
+        {
+            ret_val = false;
+        }
+        else if (!(comp_(root, l) && comp_(root, r)))
+        {
+            ret_val = false;
+        }
+    }
     //
     return ret_val;
 }
@@ -107,9 +123,15 @@ bool Heap<T>::is_a_heap(size_t root) const
 template <class T>
 void Heap<T>::heapify()
 {
-    // TODO
+    //
     // Remember: we want O(N) here.
-
+    if (size() > 0)
+    { // FIXME Puede ser que i sea >=
+        for (int i = (size() / 2) - 1; i > 0; i--)
+        {
+            shift_down(i);
+        }
+    }
     //
     assert(is_a_heap());
 }
@@ -117,9 +139,10 @@ void Heap<T>::heapify()
 template <class T>
 Heap<T>::Heap(std::vector<T> &values, Comp const &comp) : values_(&values), comp_(comp)
 {
-    // TODO
+    //
     // Hint: use the heapify function
-
+    last_item_ = (*values_).size();
+    heapify();
     //
     assert(is_a_heap());
     assert(size() == values.size());
@@ -133,16 +156,20 @@ Heap<T>::~Heap()
 template <class T>
 bool Heap<T>::is_empty() const
 {
-    // TODO: fixme
-    return true;
+    //
+    if (last_item_ == 0)
+    {
+        return true;
+    }
+    return false;
     //
 }
 
 template <class T>
 size_t Heap<T>::size() const
 {
-    // TODO: fixme
-    return 0;
+    //
+    return last_item_;
     //
 }
 
@@ -150,8 +177,8 @@ template <class T>
 T const &Heap<T>::item() const
 {
     assert(!is_empty());
-    // TODO: fixme
-    return T{};
+    //
+    return (*values_)[0];
     //
 }
 
@@ -161,10 +188,20 @@ void Heap<T>::insert(T const &new_it)
 #ifndef NDEBUG
     size_t old_size = size();
 #endif
-    // TODO
+    //
     // Remember: we are using a dynamic array, so we need to check if the array
     // is full to push_back the new value if it is needed.
+    if (last_item_ == (*values_).size())
+    {
+        (*values_).push_back(new_it);
+    }
+    else
+    {
+        (*values_)[last_item_] = new_it;
+    }
 
+    shift_up(last_item_);
+    last_item_++;
     //
     assert(is_a_heap());
     assert(size() == old_size + 1);
@@ -177,8 +214,13 @@ void Heap<T>::remove()
     size_t old_size = size();
 #endif
     assert(!is_empty());
-    // TODO
-
+    //
+    last_item_--;
+    if (last_item_ > 0)
+    {
+        std::swap((*values_)[0], (*values_)[last_item_]);
+        shift_down(0);
+    }
     //
     assert(is_a_heap());
     assert(size() == old_size - 1);
