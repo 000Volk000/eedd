@@ -1,6 +1,6 @@
-TestHeapEditing 0 0
-TestHeapify 0 0
-TestHeapsort 0 0
+TestHeapEditing 2 0.031912
+TestHeapify 7 0.0313967
+TestHeapsort 4 0.0569338
 TestPQueue 0 0
 ---
-TestHeapEditing
+TestPQueue

@@ -85,7 +85,7 @@ void Heap<T>::shift_down(size_t i)
 
     if (i != n)
     {
-        std::swap(values_[i], values_[n]);
+        std::swap((*values_)[i], (*values_)[n]);
         shift_down(n);
     }
     //
@@ -99,21 +99,28 @@ bool Heap<T>::is_a_heap(size_t root) const
     // Remember: the tree is a heap if both children are heaps and the root is
     // comp(parent, child) if true for both children.
     // Remember: a leaf is a heap.
-    size_t l = left(root);
-    size_t r = right(root);
-    if (!(l > last_item_ && r > last_item_))
+    if (root >= last_item_)
     {
-        if (!is_a_heap(l))
+
+        size_t lC = left(root);
+        size_t rC = right(root);
+
+        if (lC < last_item_ && !comp_((*values_)[root], (*values_)[lC]))
         {
             ret_val = false;
         }
-        else if (r < last_item_ && !is_a_heap(r))
+        else if (lC < last_item_)
+        {
+            ret_val = is_a_heap(lC);
+        }
+
+        if (ret_val && rC < last_item_ && !comp_((*values_)[root], (*values_)[rC]))
         {
             ret_val = false;
         }
-        else if (!(comp_(root, l) && comp_(root, r)))
+        else if (ret_val && rC < last_item_)
         {
-            ret_val = false;
+            ret_val = ret_val && is_a_heap(rC);
         }
     }
     //
@@ -126,8 +133,8 @@ void Heap<T>::heapify()
     //
     // Remember: we want O(N) here.
     if (size() > 0)
-    { // FIXME Puede ser que i sea >=
-        for (int i = (size() / 2) - 1; i > 0; i--)
+    {
+        for (int i = (size() / 2) - 1; i >= 0; i--)
         {
             shift_down(i);
         }
@@ -191,9 +198,9 @@ void Heap<T>::insert(T const &new_it)
     //
     // Remember: we are using a dynamic array, so we need to check if the array
     // is full to push_back the new value if it is needed.
-    if (last_item_ == (*values_).size())
+    if (last_item_ == values_->size())
     {
-        (*values_).push_back(new_it);
+        values_->push_back(new_it);
     }
     else
     {
@@ -229,9 +236,20 @@ void Heap<T>::remove()
 template <class T>
 void heapsort(std::vector<T> &values, std::function<bool(T const &a, T const &b)> const &comp)
 {
-    // TODO
+    //
     // Remember: we want O(N log N) here.
-
+    Heap<T> heap(values, comp);
+    std::vector<T> sorted;
+    while (!heap.is_empty())
+    {
+        sorted.push_back(heap.item());
+        heap.remove();
+    }
+    values.resize(sorted.size());
+    for (size_t i = 0; i < sorted.size(); ++i)
+    {
+        values[i] = sorted[sorted.size() - 1 - i];
+    }
     //
 #ifndef NDEBUG
     for (size_t i = 1; i < values.size(); ++i)
