@@ -1,5 +1,0 @@
-/home/dario/universidad/eedd/p4/priority_queue/build/CMakeFiles/test_heap.dir
-/home/dario/universidad/eedd/p4/priority_queue/build/CMakeFiles/test_pqueue.dir
-/home/dario/universidad/eedd/p4/priority_queue/build/CMakeFiles/test.dir
-/home/dario/universidad/eedd/p4/priority_queue/build/CMakeFiles/edit_cache.dir
-/home/dario/universidad/eedd/p4/priority_queue/build/CMakeFiles/rebuild_cache.dir

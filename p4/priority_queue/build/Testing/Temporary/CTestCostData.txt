@@ -1,5 +1,0 @@
-TestHeapEditing 4 0.0442508
-TestHeapify 9 0.0346427
-TestHeapsort 6 0.0635668
-TestPQueue 1 0.0465288
----
