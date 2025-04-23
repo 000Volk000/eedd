@@ -22,28 +22,22 @@
 	TotalVirtualMemory="0"
 	TotalPhysicalMemory="13818"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="4297.63"
+	ProcessorClockFrequency="4298.33"
 	>
 	<Testing>
-		<StartDateTime>Apr 23 15:18 CEST</StartDateTime>
-		<StartTestTime>1745414299</StartTestTime>
+		<StartDateTime>Apr 23 17:34 CEST</StartDateTime>
+		<StartTestTime>1745422442</StartTestTime>
 		<TestList>
 			<Test>/home/dario/universidad/eedd/p4/priority_queue/TestPQueue</Test>
 		</TestList>
-		<Test Status="failed">
+		<Test Status="passed">
 			<Name>TestPQueue</Name>
 			<Path>/home/dario/universidad/eedd/p4/priority_queue</Path>
 			<FullName>/home/dario/universidad/eedd/p4/priority_queue/TestPQueue</FullName>
 			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_pqueue" "04_pqueue"</FullCommandLine>
 			<Results>
-				<NamedMeasurement type="text/string" name="Exit Code">
-					<Value>Failed</Value>
-				</NamedMeasurement>
-				<NamedMeasurement type="text/string" name="Exit Value">
-					<Value>1</Value>
-				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Execution Time">
-					<Value>0.505428</Value>
+					<Value>0.0465288</Value>
 				</NamedMeasurement>
 				<NamedMeasurement type="numeric/double" name="Processors">
 					<Value>1</Value>
@@ -58,12 +52,12 @@
 					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
 				</NamedMeasurement>
 				<Measurement>
-					<Value encoding="base64" compression="gzip">eJztlMFOwzAQRO/5hV7mBK0QsdOmHCyCxB+A5FuFQlRvyUqNbWynCL6eJG0PHPoF9Liamd3xO1hTTAi9tWw/FGRZ+8+eehJSIs9zzDarZadHj29iJJPPNrLL9KVQcQ4Vx9COLceWDL44taAQXMDWGcL9w7QoDaZTWEG0riNhmsBO9JYPFCKbxggiY4QvhR+EwOm7Ph77O9bc+bz1Xq2lwsGxwctJfx3lR/2kFNnJOt86O3TTNwtspl4aFdimN4Xn4Y0hsbN4j/xD8wWqCm5v6nHCHYpb7BreDxyyyxCWVwhCrq4QhCz/EYRCrDH2j+efIvsFLnl/PQ==</Value>
+					<Value encoding="base64" compression="gzip">eJwLSS0uUSgqzcvLzEu3UjAwiS8oLE0tTdU3MFDQ09NTkI42NsoNAakpSCwuTk3Rk442yOUKwaXJkBxNRuRoMiZHkwkeTab6pgolQMFimCgXAK/PWOo=</Value>
 				</Measurement>
 			</Results>
 		</Test>
-		<EndDateTime>Apr 23 15:18 CEST</EndDateTime>
-		<EndTestTime>1745414299</EndTestTime>
+		<EndDateTime>Apr 23 17:34 CEST</EndDateTime>
+		<EndTestTime>1745422442</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -59,7 +59,7 @@ void Heap<T>::shift_up(size_t i)
     //
     if (i > 0 && comp_((*values_)[i], (*values_)[parent(i)]))
     {
-        std::swap(values_[i], values_[parent(i)]);
+        std::swap((*values_)[i], (*values_)[parent(i)]);
         shift_up(parent(i));
     }
     //

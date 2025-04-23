@@ -1,32 +1,24 @@
-Start testing: Apr 23 15:18 CEST
+Start testing: Apr 23 17:34 CEST
 ----------------------------------------------------------
 4/4 Testing: TestPQueue
 4/4 Test: TestPQueue
 Command: "/usr/bin/python3.13" "run_tests.py" "/home/dario/universidad/eedd/p4/priority_queue/build//test_pqueue" "04_pqueue"
 Directory: /home/dario/universidad/eedd/p4/priority_queue
-"TestPQueue" start time: Apr 23 15:18 CEST
+"TestPQueue" start time: Apr 23 17:34 CEST
 Output:
 ----------------------------------------------------------
 Test running: 04_pqueue/00 ... [32mTest passed.[0m
-Test running: 04_pqueue/01 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
-
-Test running: 04_pqueue/02 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
-
-Test running: 04_pqueue/03 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
-
-Test running: 04_pqueue/04 ... [31mTest finished with error code -6[0m
-test_pqueue: /home/dario/universidad/eedd/p4/priority_queue/priority_queue_imp.hpp:50: void PriorityQueue<T>::enqueue(const T&) [with T = int]: Assertion `size() == old_size + 1' failed.
-
-1/5 tests passed.
+Test running: 04_pqueue/01 ... [32mTest passed.[0m
+Test running: 04_pqueue/02 ... [32mTest passed.[0m
+Test running: 04_pqueue/03 ... [32mTest passed.[0m
+Test running: 04_pqueue/04 ... [32mTest passed.[0m
+5/5 tests passed.
 <end of output>
-Test time =   0.51 sec
+Test time =   0.05 sec
 ----------------------------------------------------------
-Test Failed.
-"TestPQueue" end time: Apr 23 15:18 CEST
+Test Passed.
+"TestPQueue" end time: Apr 23 17:34 CEST
 "TestPQueue" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 23 15:18 CEST
+End testing: Apr 23 17:34 CEST
