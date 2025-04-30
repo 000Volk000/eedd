@@ -20,10 +20,11 @@ double
 uniform()
 {
     double ret_v = 0.0;
-    // TODO
+    //
     // Hint: Use std::uniform_real_distribution<double>
     // Remember: use Generator as random bit generator.
-
+    std::uniform_real_distribution<double> dis(0.0, 1.0);
+    ret_v = dis(Generator);
     //
     assert(0.0l <= ret_v && ret_v < 1.0l);
     return ret_v;
@@ -34,9 +35,10 @@ pick_at_random(std::uint64_t const &a, std::uint64_t const &b)
 {
     assert(a < b);
     std::uint64_t ret_v = 0;
-    // TODO
+    //
     // Hint: Use std::uniform_int_distribution<std::uint64_t>
-
+    std::uniform_int_distribution<std::uint64_t> dis(a, b);
+    ret_v = dis(Generator);
     //
     assert(a <= ret_v && ret_v <= b);
     return ret_v;
@@ -125,9 +127,9 @@ UHash::operator()(std::uint64_t k) const
     assert(k < p());
     size_t hash = 0;
 
-    // TODO
+    //
     // Hint: use static_cast to static type conversions.
-
+    hash = static_cast<size_t>((a() * k + b()) % p() % m());
     //
 
     assert(hash < m());
@@ -215,13 +217,19 @@ size_t
 LPHash::operator()(uint64_t k, size_t iter) const
 {
     size_t ret_v = 0;
-    // TODO
+    //
     // Remember: if iter == 0 (first attempt), compute the hash value.
     //          iter>0 means a collision happened so get the next proper value
     //          regarding the collision algorithm.
     // Hint: you can use state()/set_state to get/save the first value to avoid recompute it when
     //       a collision happened.
-
+    if (iter == 0)
+    {
+        ret_v = hash()(k);
+        set_state(ret_v);
+    }
+    else
+        ret_v = (state() + iter) % m();
     //
     return ret_v;
 }
@@ -252,14 +260,20 @@ size_t
 QPHash::operator()(std::uint64_t k, size_t iter) const
 {
     size_t ret_v = 0;
-    // TODO
+    //
     // Remember: if iter == 0 (first attempt), compute the hash value.
     //          iter>0 means a collision happened so get the next proper value
     //          regarding the collision algorithm.
     // Hint: you can use state()/set_state to get/save the first value to avoid recompute it when
     //       a collision happened.
     // Remember: m is two power and c1= c2 = 1/2.
-
+    if (iter == 0)
+    {
+        ret_v = hash()(k);
+        set_state(ret_v);
+    }
+    else
+        ret_v = (state() + ((iter + (iter * iter)) >> 1)) % m();
     //
     return ret_v;
 }
@@ -311,13 +325,22 @@ size_t
 RPHash::operator()(std::uint64_t k, size_t iter) const
 {
     size_t ret_v = 0;
-    // TODO
+    //
     // Remember: if iter == 0 (first attempt), compute the hash value.
     //         iter>0 means a collision happened so get the next proper value
     //         regarding the collision algorithm.
     // Hint: you can use state()/set_state to get/save the current hash value to avoid recompute it when
     //       a collision happened.
-
+    if (iter == 0)
+    {
+        ret_v = hash()(k);
+        set_state(ret_v);
+    }
+    else
+    {
+        ret_v = (state() + c()) % m();
+        set_state(ret_v);
+    }
     //
 
     return ret_v;
@@ -367,12 +390,19 @@ size_t
 RHash::operator()(std::uint64_t k, size_t iter) const
 {
     size_t ret_v = 0;
-    // TODO
-    // Remember: if iter == 0 (first attempt), compute the hash value using
-    // the hash_fs()[0], iter==1 using hash_fs()[1], ..., for iter>=hash_fs().size()
-    // use linear probing from the last hash value.
-    // Hint: you can use state()/set_state to get/save the current hash value to avoid recompute it when
-    //       a collision happened.
+    // FIXME
+    //  Remember: if iter == 0 (first attempt), compute the hash value using
+    //  the hash_fs()[0], iter==1 using hash_fs()[1], ..., for iter>=hash_fs().size()
+    //  use linear probing from the last hash value.
+    //  Hint: you can use state()/set_state to get/save the current hash value to avoid recompute it when
+    //        a collision happened.
+    if (iter < hash_fs().size())
+    {
+        ret_v = hash_fs()[iter](k);
+        set_state(ret_v);
+    }
+    else
+        ret_v = (state() + iter) % m();
 
     //
 
