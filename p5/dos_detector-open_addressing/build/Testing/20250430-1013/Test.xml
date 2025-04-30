@@ -22,14 +22,48 @@
 	TotalVirtualMemory="0"
 	TotalPhysicalMemory="13818"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="3994.66"
+	ProcessorClockFrequency="3696.39"
 	>
 	<Testing>
-		<StartDateTime>Apr 30 12:13 CEST</StartDateTime>
-		<StartTestTime>1746008008</StartTestTime>
-		<TestList/>
-		<EndDateTime>Apr 30 12:13 CEST</EndDateTime>
-		<EndTestTime>1746008008</EndTestTime>
+		<StartDateTime>Apr 30 12:16 CEST</StartDateTime>
+		<StartTestTime>1746008191</StartTestTime>
+		<TestList>
+			<Test>/home/dario/universidad/eedd/p5/dos_detector-open_addressing/TestDosDetector</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>TestDosDetector</Name>
+			<Path>/home/dario/universidad/eedd/p5/dos_detector-open_addressing</Path>
+			<FullName>/home/dario/universidad/eedd/p5/dos_detector-open_addressing/TestDosDetector</FullName>
+			<FullCommandLine>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p5/dos_detector-open_addressing/build//test_dos_detector" "08_tests_dos_detector"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.296622</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.13 "run_tests.py" "/home/dario/universidad/eedd/p5/dos_detector-open_addressing/build//test_dos_detector" "08_tests_dos_detector"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJzlkDFPAzEMhff7C108HSDRJAelqiIY+A+3dQjh7BKLXhI5ufL3SRFIwMTOYMn6/Pz09EYqFWSJkeOLBbNztYHiMLWhSlNNoo0BpRSs9rfDPJ71B45cAiG8cQ1AIklgSkiw3q72Zu7OHj8sLOiQZtLohZNeIp9ICqNHTYSo853+rl6nTNF5RKFSWi4dfAlqytluBgsLx7rduAqZp1fnqxMfMc2XU4ot2te1v4Zf4MrCYykklVOEJw/3DyBU3Qn6/nNp5PkCDp6PhKrrxr9UM/zLaoy+gY82IPv22NA7uOTKCA==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Apr 30 12:16 CEST</EndDateTime>
+		<EndTestTime>1746008192</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
