@@ -1,0 +1,87 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "dos_detect-open_addressing",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "test_dos_detector::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_dos_detector-Debug-0ade58f21ead20939a8b.json",
+					"name" : "test_dos_detector",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_hash_f::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_hash_f-Debug-b5a8d676dc2a69b9fafc.json",
+					"name" : "test_hash_f",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_hash_table::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_hash_table-Debug-dac51beb3f52b7afc1da.json",
+					"name" : "test_hash_table",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_ip_utils::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_ip_utils-Debug-ceb4db85044b860fe4a5.json",
+					"name" : "test_ip_utils",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/dario/universidad/eedd/p5/dos_detector-open_addressing/build",
+		"source" : "/home/dario/universidad/eedd/p5/dos_detector-open_addressing"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 8
+	}
+}
