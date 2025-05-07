@@ -390,20 +390,27 @@ size_t
 RHash::operator()(std::uint64_t k, size_t iter) const
 {
     size_t ret_v = 0;
-    // FIXME
+    //
     //  Remember: if iter == 0 (first attempt), compute the hash value using
     //  the hash_fs()[0], iter==1 using hash_fs()[1], ..., for iter>=hash_fs().size()
     //  use linear probing from the last hash value.
     //  Hint: you can use state()/set_state to get/save the current hash value to avoid recompute it when
     //        a collision happened.
-    if (iter < hash_fs().size())
+    if (iter == 0)
     {
-        ret_v = hash_fs()[iter](k);
+        ret_v = hash()(k);
+        set_state(ret_v);
+    }
+    else if (iter <= hash_fs().size())
+    {
+        ret_v = hash_fs()[iter - 1](k);
         set_state(ret_v);
     }
     else
-        ret_v = (state() + iter) % m();
-
+    {
+        ret_v = (state() + 1) % m();
+        set_state(ret_v);
+    }
     //
 
     return ret_v;

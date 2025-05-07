@@ -119,9 +119,10 @@ protected:
         DELETED = 2
     };
 
-    // TODO
+    //
     // Hint: consider the use of std::pair to store the <K,V> pair.
-
+    std::pair<K, V> value_;
+    EntryState state_;
     //
 };
 

@@ -22,8 +22,11 @@ HashTable<K, V>::HashTable(size_t m,
                            OACollisionResolution::Ref hash)
 {
     assert(m == hash->m());
-    // TODO
-
+    //
+    key_to_int_ = key_to_int;
+    hash_ = hash;
+    table_.resize(m);
+    used_entries_ = 0;
     //
     assert(size() == m);
 }
@@ -33,8 +36,8 @@ size_t
 HashTable<K, V>::size() const
 {
     size_t ret_v = 0;
-    // TODO
-
+    //
+    ret_v = table_.size();
     //
     return ret_v;
 }
@@ -43,8 +46,8 @@ template <class K, class V>
 float HashTable<K, V>::load_factor() const
 {
     float ret_v = 0.0f;
-    // TODO
-
+    //
+    ret_v = used_entries_ / table_.size();
     //
     return ret_v;
 }
@@ -53,10 +56,14 @@ template <class K, class V>
 HashTableIterator<K, V> HashTable<K, V>::begin() const
 {
     HashTableIterator<K, V> ret_v;
-    // TODO
+    //
     // Remember: the iterator should point to the first valid entry.
     // Hint: you must use const_cast to remove the const qualifier from this.
+    int i = 0;
+    while ((i < table_.size()) && (!table_[i].is_valid()))
+        i++;
 
+    ret_v = HashTableIterator<K, V>(const_cast<HashTable<K, V> *>(this), i);
     //
     return ret_v;
 }
@@ -65,10 +72,14 @@ template <class K, class V>
 HashTableIterator<K, V> HashTable<K, V>::end() const
 {
     HashTableIterator<K, V> ret_v;
-    // TODO
+    //
     // Remember: the iterator should point one position pass the end of the table.
     // Hint: you must use const_cast to remove the const qualifier from this.
-    ret_v = HashTableIterator<K, V>(const_cast<HashTable<K, V> *>(this), size());
+    int i = size();
+    while ((i > 0) && (!table_[i].is_valid()))
+        i--;
+
+    ret_v = HashTableIterator<K, V>(const_cast<HashTable<K, V> *>(this), i);
     //
     assert(!ret_v.is_valid());
     return ret_v;

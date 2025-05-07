@@ -35,9 +35,12 @@ bool IP::operator<(IP const &b) const
 std::ostream &
 operator<<(std::ostream &out, const IP &ip)
 {
-    // TODO
+    //
     // Remember: we want to output the ascii code, not the char.
-
+    out << static_cast<std::uint64_t>(ip.bytes[0]) << '.'
+        << static_cast<std::uint64_t>(ip.bytes[1]) << '.'
+        << static_cast<std::uint64_t>(ip.bytes[2]) << '.'
+        << static_cast<std::uint64_t>(ip.bytes[3]);
     //
     return out;
 }
@@ -45,11 +48,20 @@ operator<<(std::ostream &out, const IP &ip)
 std::istream &
 operator>>(std::istream &in, IP &ip) noexcept(false)
 {
-    // TODO
+    //
     // Hint: you can use a std::istringstream to convert from text to uint8_t.
     // Hint: you can use the std::replace algorithm to replace '.' by ' '.
     // Remember: if a wrong format is detected, throw an runtime_error exception.
-
+    std::string input;
+    in >> input;
+    std::replace(input.begin(), input.end(), '.', ' ');
+    std::istringstream inn(input);
+    int a, b, c, d;
+    if (!(inn >> a >> b >> c >> d) || a < 0 || a > 255 || b < 0 || b > 255 || c < 0 || c > 255 || d < 0 || d > 255)
+    {
+        throw std::runtime_error("Ip: wrong input format.");
+    }
+    ip.bytes = {static_cast<std::uint8_t>(a), static_cast<std::uint8_t>(b), static_cast<std::uint8_t>(c), static_cast<std::uint8_t>(d)};
     //
     return in;
 }
@@ -58,7 +70,7 @@ std::uint64_t
 ip_to_int(const IP &ip)
 {
     std::uint64_t ret_val = 0l;
-    // TODO
+    //
     // Remember: casting to 64 bits unsigned integer to do not loss bits.
     // Hint: mult by 2^n means shift to left n bits.
     ret_val = (static_cast<std::uint64_t>(ip.bytes[0]) << 24) +
