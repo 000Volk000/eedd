@@ -90,8 +90,14 @@ size_t HashTable<K, V>::find_position(K const &k) const
 {
     assert(load_factor() < 1.0f);
     size_t idx = 0;
-    // TODO
+    //
+    size_t i = 0;
 
+    do
+    {
+        idx = (*hash_)(key_to_int_(k), i);
+        i++;
+    } while (!(table_[idx].is_empty()) && !(table_[idx].is_valid()));
     //
     assert(0 <= idx && idx < size());
     return idx;
@@ -101,7 +107,7 @@ template <class K, class V>
 HashTableIterator<K, V> HashTable<K, V>::find(K const &k) const
 {
     HashTableIterator<K, V> ret_v = end();
-    // TODO
+    //
     // Hint: use find_position.
     // Hint: you must use const_cast to remove the const qualifier from this.
     size_t idx = find_position(k);
