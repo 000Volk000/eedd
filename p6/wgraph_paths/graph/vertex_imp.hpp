@@ -15,8 +15,10 @@
 template <class T>
 Vertex<T>::Vertex(size_t l, T const &data)
 {
-    // TODO
-
+    //
+    label_ = l;
+    item_ = data;
+    is_visited_ = false;
     //
     assert(label() == l);
     assert(item() == data);
@@ -32,32 +34,32 @@ typename Vertex<T>::Ref Vertex<T>::create(size_t l, T const &data)
 template <class T>
 const T &Vertex<T>::item() const
 {
-    // TODO: fixme
-    return T{};
+    //
+    return item_;
     //
 }
 
 template <class T>
 size_t Vertex<T>::label() const
 {
-    // TODO: fixme
-    return 0;
+    //
+    return label_;
     //
 }
 
 template <class T>
 bool Vertex<T>::is_visited() const
 {
-    // TODO: fixme
-    return false;
+    //
+    return is_visited_;
     //
 }
 
 template <class T>
 void Vertex<T>::set_item(T const &v)
 {
-    // TODO
-
+    //
+    item_ = v;
     //
     assert(item() == v);
 }
@@ -65,8 +67,8 @@ void Vertex<T>::set_item(T const &v)
 template <class T>
 void Vertex<T>::set_visited(bool new_st)
 {
-    // TODO
-
+    //
+    is_visited_ = new_st;
     //
     assert(new_st || !is_visited());
     assert(!new_st || is_visited());

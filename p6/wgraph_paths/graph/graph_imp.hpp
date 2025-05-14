@@ -18,8 +18,8 @@ Graph<T, E>::Graph(bool directed)
 {
     next_label_ = 0;
 
-    // TODO
-
+    //
+    is_directed_ = directed;
     //
 
     assert(is_empty());
@@ -30,25 +30,25 @@ Graph<T, E>::Graph(bool directed)
 template <class T, class E>
 bool Graph<T, E>::is_empty() const
 {
-    // TODO: fixme
+    //
     // Remember: the graph is empty if there are not vertices.
-    return false;
+    return vertices_.empty();
     //
 }
 
 template <class T, class E>
 bool Graph<T, E>::is_directed() const
 {
-    // TODO: fixme
-    return false;
+    //
+    return is_directed_;
     //
 }
 
 template <class T, class E>
 size_t Graph<T, E>::num_vertices() const
 {
-    // TODO: fixme
-    return 0;
+    //
+    return vertices_.size();
     //
 }
 
@@ -56,10 +56,16 @@ template <class T, class E>
 size_t Graph<T, E>::num_edges() const
 {
     size_t ret_v = 0;
-    // TODO
+    //
     // Remember: is the graph is undirected the edge (u:v) was duplicated in
     // the incident list of u an v.
+    for (auto it : vertices_)
+    {
+        ret_v += it.second.size();
+    }
 
+    if (is_directed())
+        ret_v /= 2;
     //
     return ret_v;
 }
@@ -68,8 +74,14 @@ template <class T, class E>
 bool Graph<T, E>::has(VertexRef const &u) const
 {
     assert(u != nullptr);
-    // TODO: fixme
+    // FIXME
     // Hint: use vertex() to find the vertex with u's label.
+    for (auto it : vertices_)
+    {
+        if (it.first == u)
+            return true;
+    }
+
     return false;
     //
 }
@@ -81,8 +93,12 @@ bool Graph<T, E>::has(EdgeRef const &e) const
     assert(has(e->first()));
     assert(has(e->second()));
     bool ret_v = false;
-    // TODO
+    // FIXME
     // Hint: use get_iterator() to get an iterator points to the first vertex.
+    for (auto it : vertices_)
+        for (auto it2 : it.second)
+            if (it2 == e)
+                ret_v = true;
 
     //
     return ret_v;
