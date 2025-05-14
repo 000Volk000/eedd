@@ -110,10 +110,15 @@ bool Graph<T, E>::is_adjacent(VertexRef const &u, VertexRef const &v) const
     assert(has(u));
     assert(has(v));
 
-    // TODO: fixme
+    //
     // Remember: a vertex u is adjacent to v if there is a edge (u,v) or
     // if the graph is undirected, there is a edge (v,u).
     // Hint: use the method edge(x, y).
+    if (edge(u, v) != nullptr)
+    {
+        return true;
+    }
+
     return false;
     //
 }
