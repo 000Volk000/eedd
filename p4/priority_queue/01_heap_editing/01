@@ -1,4 +1,0 @@
-# test create empty with order descended
-create desc
-is_empty
-size

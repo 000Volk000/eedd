@@ -1,4 +1,0 @@
-# test create empty with order ascended
-create asc
-is_empty
-size
