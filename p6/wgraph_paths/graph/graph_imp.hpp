@@ -64,7 +64,7 @@ size_t Graph<T, E>::num_edges() const
     ret_v += it.second.size();
   }
 
-  if (is_directed())
+  if (!is_directed())
     ret_v /= 2;
   //
   return ret_v;
@@ -246,9 +246,10 @@ void Graph<T, E>::remove_vertex(const VertexRef &v)
     if (*it != v)
     {
       auto &edges = it.it_->second;
-      for (auto edge_it = edges.begin(); edge_it != edges.end();)
+      for (auto edge_it = edges.begin(); edge_it != edges.end(); edge_it++)
       {
-        edge_it = edges.erase(edge_it);
+        if ((*edge_it)->has(v))
+          edge_it = edges.erase(edge_it);
       }
     }
   }
@@ -258,6 +259,7 @@ void Graph<T, E>::remove_vertex(const VertexRef &v)
     if (it->first == v)
     {
       vertices_.erase(it);
+      break;
     }
   }
   //
@@ -328,6 +330,7 @@ void Graph<T, E>::remove_edge(VertexRef const &u, VertexRef const &v)
     if (*edge_iter == e)
     {
       u_iter.it_->second.erase(edge_iter.it_);
+      break;
     }
   }
 
@@ -339,6 +342,7 @@ void Graph<T, E>::remove_edge(VertexRef const &u, VertexRef const &v)
       if (*edge_iter == e)
       {
         v_iter.it_->second.erase(edge_iter.it_);
+        break;
       }
     }
   }
@@ -420,7 +424,7 @@ Graph<T, E>::find_first(typename T::key_t const &value) const
 {
   auto iter = vertices_begin();
   //
-  while (((*iter)->item() != value) && (iter != vertices_end()))
+  while ((iter != vertices_end()) && ((*iter)->item().key() != value))
   {
     iter++;
   }
