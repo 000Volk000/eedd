@@ -354,9 +354,36 @@ void Graph<T, E>::remove_edge(VertexRef const &u, VertexRef const &v)
 template <class T, class E>
 std::ostream &Graph<T, E>::fold(std::ostream &out) const
 {
-  // TODO
+  //
   // Remember: to fold and edge we use item().key() to fold the edge's ends.
 
+  if (is_directed())
+    out << "DIRECTED" << std::endl;
+  else
+    out << "UNDIRECTED" << std::endl;
+
+  out << num_vertices() << std::endl;
+
+  for (auto iter : vertices_)
+  {
+    out << iter.first->item() << std::endl;
+  }
+
+  out << num_edges() << std::endl;
+
+  for (auto iter = vertices_begin(); iter != vertices_end(); iter++)
+  {
+    VertexRef u = *iter;
+    for (auto edge_iter = edges_begin(iter); edge_iter != edges_end(iter); edge_iter++)
+    {
+      VertexRef v = (*edge_iter)->other(u);
+
+      if (is_directed_ || u->label() < v->label())
+      {
+        out << u->item().key() << " " << v->item().key() << " " << (*edge_iter)->item() << std::endl;
+      }
+    }
+  }
   //
   return out;
 }
@@ -364,45 +391,80 @@ std::ostream &Graph<T, E>::fold(std::ostream &out) const
 template <class T, class E>
 Graph<T, E>::Graph(std::istream &in) noexcept(false)
 {
-  // TODO
+  //
   // Remember: Throw std::runtime_error("Wrong graph") when detecting a wrong
   //           input format.
   // Remember: key_t type is used to unfold the edge's ends.
 
-  // TODO
+  //
   // Reset the next label attribute to 0.
   next_label_ = 0;
   //
 
-  // TODO
+  //
   // First: is it directed or undirected?
+  std::string graph_type;
+  if (!(in >> graph_type))
+    throw std::runtime_error("Wrong graph");
 
+  if (graph_type == "DIRECTED")
+  {
+    is_directed_ = true;
+  }
+  else if (graph_type == "UNDIRECTED")
+  {
+    is_directed_ = false;
+  }
+  else
+  {
+    throw std::runtime_error("Wrong graph");
+  }
   //
 
   size_t size = 0;
-  // TODO
+  //
   // Second: get the number of vertices and create a Graph with this capacity.
-
+  if (!(in >> size))
+    throw std::runtime_error("Wrong graph");
   //
 
-  // TODO
+  //
   // Third: load the N data items and add a vertex for each one.
+  for (size_t i = 0; i < size; i++)
+  {
+    T data;
+    if (!(in >> data))
+      throw std::runtime_error("Wrong graph");
 
+    add_vertex(data);
+  }
   //
 
   size_t n_edges = 0;
 
-  // TODO
+  //
   // Fourth: load the number of edges.
-
+  if (!(in >> n_edges))
+    throw std::runtime_error("Wrong graph");
   //
 
-  // TODO
+  //
   // Fifth: load the N edges.
   // Remember: Use T::key_t type to unfold the edge's end keys.
-  // Hint: use find_vertex(T::key_t) to get a reference to the vertex with that
-  // key.
+  // Hint: use find_vertex(T::key_t) to get a reference to the vertex with that key.
+  for (size_t i = 0; i < n_edges; i++)
+  {
+    typename T::key_t key_from, key_to;
+    E edge_data;
 
+    if (!(in >> key_from >> key_to >> edge_data))
+      throw std::runtime_error("Wrong graph");
+
+    auto v_from = find_vertex(key_from);
+    auto v_to = find_vertex(key_to);
+
+    add_edge(v_from, v_to, edge_data);
+  }
   //
 }
 

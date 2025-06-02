@@ -73,6 +73,11 @@
       "typeinfo": "cpp",
       "valarray": "cpp",
       "variant": "cpp",
-      "source_location": "cpp"
+      "source_location": "cpp",
+      "complex": "cpp",
+      "set": "cpp",
+      "unordered_set": "cpp",
+      "queue": "cpp",
+      "stack": "cpp"
     }
   }
