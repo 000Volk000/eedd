@@ -34,15 +34,58 @@ void dijkstra_algorithm(Graph<T, float> &g,
     // Reset visited flags.
     g.reset(false);
 
-    // TODO: initialize the predecessors and distances vectors.
+    // initialize the predecessors and distances vectors.
     // Remember: each vertex is predecessor of itself with distance infinite.
+    typename Graph<T, float>::VertexRef u, v;
+    EdgeIterator<T, float> e;
+    Tuple t;
 
+    auto less = [](const Tuple &a, const Tuple &b)
+    {
+        return a < b;
+    };
+    std::vector<Tuple> qVec;
+    PriorityQueue<Tuple> q(qVec, less);
+
+    predecessors.resize(g.num_vertices());
+    distances.resize(g.num_vertices());
+
+    for (size_t i = 0; i < predecessors.size(); i++)
+    {
+        predecessors[i] = i;
+    }
+
+    for (auto &it : distances)
+        it = std::numeric_limits<float>::infinity();
     //
 
-    // TODO: implement the Dijkstra algorithm.
+    // implement the Dijkstra algorithm.
     // Note: you can use std::priority_queue if you have not implemented
     // the ADT PriorityQueue.
+    q.enqueue(Tuple(0.0, source->label(), source->label()));
 
+    while (!q.is_empty())
+    {
+        t = q.front();
+        q.dequeue();
+        u = g.vertex(std::get<1>(t));
+
+        if (!u->is_visited())
+        {
+            predecessors[std::get<1>(t)] = std::get<2>(t);
+            distances[std::get<1>(t)] = std::get<0>(t);
+            u->set_visited(true);
+            e = g.edges_begin(g.get_iterator(u));
+
+            while (e != g.edges_end(g.get_iterator(u)))
+            {
+                v = (*e)->other(u);
+                if (!v->is_visited())
+                    q.enqueue(Tuple(distances[u->label()] + (*e)->item(), v->label(), u->label()));
+                e++;
+            }
+        }
+    }
     //
 }
 
@@ -54,9 +97,18 @@ dijkstra_path(size_t src, size_t dst,
     assert(dst < predecessors.size());
     assert(predecessors[src] == src);
     std::list<size_t> path;
-    // TODO
+    //
     // Remember: if the destination is unreachable, return an empty list.
-
+    if (predecessors[dst] != dst || dst == src)
+    {
+        size_t pred = dst;
+        do
+        {
+            path.push_front(pred);
+            pred = predecessors[pred];
+        } while (pred != predecessors[pred]);
+        path.push_front(src);
+    }
     //
     return path;
 }

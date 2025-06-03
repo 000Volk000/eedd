@@ -1,7 +1,7 @@
 {
     "cmake.debugConfig": {
       "args": [
-        "/home/dario/universidad/eedd/p6/wgraph_paths/graph/02_tests_graph/03"
+        "/home/dario/universidad/eedd/p6/wgraph_paths/01_tests_dijkstra/02"
       ]
     },
     "files.associations": {

@@ -7,7 +7,7 @@
             "request": "launch",
             // Resolved by CMake Tools:
             "program": "${command:cmake.launchTargetPath}",
-            "args": ["/home/dario/universidad/eedd/p6/wgraph_paths/graph/02_tests_graph/03"],
+            "args": ["/home/dario/universidad/eedd/p6/wgraph_paths/01_tests_dijkstra/02"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [
