@@ -8,18 +8,18 @@
  */
 #pragma once
 
-#include <iostream>
+#include <cstddef>
 #include <functional>
-#include <list_node.hpp>
+#include <iostream>
 #include <list_iterator.hpp>
+#include <list_node.hpp>
+#include <memory>
 
 /**
  * @brief ADT List.
  * Models a Double linked list[T] with iterators to edit.
  */
-template <class T>
-class List
-{
+template <class T> class List {
 public:
   /** @brief Define an iterator to edit the list.*/
   typedef ListIterator<T> iterator;
@@ -108,7 +108,8 @@ public:
    * If the item is not found, the end iterator will be returned.
    * @param it is the value to be found.
    * @param from is the position from which to start searching.
-   * @return an iterator to the first found position or end iterator if it was not found.
+   * @return an iterator to the first found position or end iterator if it was
+   * not found.
    * @post ret_val==end() || ret_val->item()==it
    */
   iterator find(T const &it, iterator const &from) const;
@@ -187,8 +188,8 @@ public:
    * @param first fist position in list2 of the range.
    * @param last last position in list2 of the range.
    */
-  void splice(iterator const &pos, List<T> &list2,
-              iterator const &first, iterator const &last);
+  void splice(iterator const &pos, List<T> &list2, iterator const &first,
+              iterator const &last);
   /**
    * @brief Transfers all elements from one list to this list.
    *
@@ -222,7 +223,8 @@ public:
    * Both lists should be sorted. No elements are copied, and the container
    * other becomes empty after the merge.
    *
-   * @tparam Compare comparison function object which returns ​true if the first argument is ordered before the second.
+   * @tparam Compare comparison function object which returns ​true if the
+   * first argument is ordered before the second.
    *
    * The signature of the comparison function should be equivalent to
    * the following: bool cmp(const Type1& a, const Type2& b);
@@ -230,13 +232,13 @@ public:
    * @param other the list to be merged with this list.
    * @param cmp comparison object.
    */
-  template <class Compare>
-  void merge(List<T> &other, Compare cmp);
+  template <class Compare> void merge(List<T> &other, Compare cmp);
 
   /**
    * @brief Sorts the elements of the list.
    *
-   * @tparam Compare comparison function object which returns ​true if the first argument is ordered before the second.
+   * @tparam Compare comparison function object which returns ​true if the
+   * first argument is ordered before the second.
    *
    * The signature of the comparison function should be equivalent to
    * the following: bool cmp(const Type1& a, const Type2& b);
@@ -245,8 +247,7 @@ public:
    *
    * @post time analysis: O(N Log N)
    */
-  template <class Compare>
-  void sort(Compare cmp);
+  template <class Compare> void sort(Compare cmp);
 
   /** @}*/
 
@@ -285,7 +286,8 @@ protected:
   // Give a representation using a double linked list of nodes thats used
   // a dummy node to mark the "end" of the list.
   // Also we want a size() operation with O(1).
-
+  size_t size_;
+  std::shared_ptr<DNode<T>> dummy_;
   //
 };
 
