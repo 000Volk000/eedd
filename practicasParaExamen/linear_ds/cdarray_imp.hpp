@@ -104,11 +104,13 @@ CDArray<T>::CDArray(std::istream &in) noexcept(false) : CDArray(1) {
 
 template <class T> std::ostream &CDArray<T>::fold(std::ostream &out) const {
   // TODO
-  out << "[";
+  out << "[ ";
   for (size_t i = front_; i != back_; i = cInc(i, cap_)) {
-    out << get(i);
+    out << get(i) << " ";
   }
-  out << get(back_);
+  if (size_ > 0) {
+    out << get(back_) << " ";
+  }
   out << "]";
   //
   return out;

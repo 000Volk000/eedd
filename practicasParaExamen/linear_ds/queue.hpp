@@ -17,9 +17,7 @@
  * @brief ADT Queue.
  * Models a queue of T.
  */
-template <class T>
-class Queue
-{
+template <class T> class Queue {
 public:
   /** @name Life cycle.*/
   /** @{*/
@@ -30,9 +28,7 @@ public:
   Queue();
 
   /** @brief Destroy a Queue.**/
-  ~Queue()
-  {
-  }
+  ~Queue() {}
 
   /** @}*/
 
