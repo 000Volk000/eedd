@@ -16,6 +16,7 @@
 #include <heap.hpp>
 #include <iterator>
 #include <utility>
+#include <vector>
 
 /**
  * @brief Compute the parent's index of a given child.
@@ -109,7 +110,7 @@ template <class T> void Heap<T>::heapify() {
   // TODO
   // Remember: we want O(N) here.
   if (size() > 0) {
-    for (size_t i = (last_item_ / 2) - 1; i >= 0; i--) {
+    for (int i = (last_item_ / 2) - 1; i >= 0; i--) {
       shift_down(i);
     }
   }
@@ -122,8 +123,6 @@ Heap<T>::Heap(std::vector<T> &values, Comp const &comp)
     : values_(&values), comp_(comp) {
   // TODO
   // Hint: use the heapify function
-  values_ = &values;
-  comp_ = comp;
   last_item_ = values.size();
   heapify();
   //
@@ -135,7 +134,7 @@ template <class T> Heap<T>::~Heap() {}
 
 template <class T> bool Heap<T>::is_empty() const {
   // TODO: fixme
-  return values_->empty();
+  return last_item_ == 0;
   //
 }
 
@@ -191,9 +190,16 @@ void heapsort(std::vector<T> &values,
               std::function<bool(T const &a, T const &b)> const &comp) {
   // TODO
   // Remember: we want O(N log N) here.
-  Heap<T> heap(values, comp);
-  while (!heap.is_empty()) {
-    heap.remove();
+  std::vector<T> aux;
+  Heap<T> heapAux(values, comp);
+
+  while (!heapAux.is_empty()) {
+    aux.push_back(heapAux.item());
+    heapAux.remove();
+  }
+
+  for (size_t i = 0; i < aux.size(); i++) {
+    values[i] = aux[aux.size() - i - 1];
   }
   //
 #ifndef NDEBUG
